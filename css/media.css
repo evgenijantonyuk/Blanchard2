@@ -68,9 +68,11 @@
   .header__burger {
     display: flex;
     z-index: 1;
+    padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
   }
-
-
 
   .header__right {
     width: 100%;
@@ -135,6 +137,10 @@
     right: 0;
     top: 35.5%;
     display: flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   .header__search-left {
@@ -178,6 +184,10 @@
 
   .search__exit {
     display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
 
@@ -347,12 +357,15 @@
   }
 
   .events__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: 100% !important;
+    width: 100%;
     position: absolute;
-    display: block;
+    display: inline;
     top: 9px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    right: 50%;
+    transform: rotate(90deg);
+    margin-right: 15px;
+    color: #666;
   }
 
 
@@ -542,7 +555,7 @@
 
   .gallery__swiper-slide {
     max-width: 315px;
-    max-height: auto;
+    /* max-height: auto; */
   }
 
   .gallery__swiper-btn {
@@ -654,17 +667,6 @@
     position: relative;
   }
 
-
-  .events__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: 100% !important;
-    position: absolute;
-    display: block;
-    top: 18px;
-    left: 0;
-    right: 0;
-  }
-
-
   /* ..................project....................*/
 
   .tooltip__block .tooltip-text {
@@ -736,6 +738,7 @@
     margin-bottom: 12px;
   }
 
+
   .form__btn {
     min-width: 317px;
     padding: 9px 5px;
@@ -794,7 +797,7 @@
     position: absolute;
     left: 20%;
     top: 50px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .events__img {

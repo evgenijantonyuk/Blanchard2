@@ -85,18 +85,11 @@ section {
   scroll-behavior: smooth;
 }
 
-.list-reset {
+/* .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.btn-reset {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+} */
 
 :root {
   --swiper-theme-color: #666;
@@ -109,14 +102,6 @@ section {
   max-width: 1650px;
   margin: 0 auto;
   padding: 0 25px;
-}
-
-.btn__reset {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  border: none;
 }
 
 /*........................header.......................*/
@@ -156,10 +141,13 @@ section {
 
 /*.....................bureger..........................*/
 .burgerNav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   position: absolute;
   z-index: 99;
   width: 100%;
-  height: 768px;
+  min-height: 768px;
   padding-top: 39px;
   padding-left: 50px;
   background: rgba(0, 0, 0, 0.9);
@@ -174,6 +162,10 @@ section {
 
 .burgerNav__exit {
   margin-bottom: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .burgerNav__list {
@@ -181,6 +173,7 @@ section {
 }
 
 .burgerNav__link {
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 64px;
@@ -189,6 +182,9 @@ section {
 
 .nav__list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav__item:not(:last-child) {
@@ -196,6 +192,7 @@ section {
 }
 
 .nav__link {
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -235,6 +232,7 @@ section {
 }
 
 .header__enter {
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -275,7 +273,7 @@ section {
   position: absolute;
   width: 100%;
   top: 100px;
-  height: 70px;
+  min-height: 70px;
   background: rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -287,6 +285,7 @@ section {
 }
 
 .menu__list {
+  list-style: none;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -301,8 +300,15 @@ section {
 }
 
 .menu__btn {
+  padding: 0;
+  margin-left: -40px;
+  margin-right: 41px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   border: none;
   cursor: pointer;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
@@ -381,6 +387,7 @@ section {
 
 .dropdown__item {
   position: relative;
+  list-style: none;
 }
 
 .simplebar-content {
@@ -391,12 +398,13 @@ section {
 .dropdown__link {
   display: flex;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
   width: 100%;
   padding-left: 14px;
   border: 2px solid transparent;
   background-repeat: no-repeat;
   background-position: center center;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -420,8 +428,6 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40px;
-  width: 220px;
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);
   border-color: #D1A9F0;
 }
@@ -521,7 +527,7 @@ section {
 
 .simplebar-track {
   width: 2px !important;
-  height: 220px;
+  min-height: 220px;
   right: 19px;
   bottom: 40px;
   opacity: 1;
@@ -541,22 +547,37 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
 .search__form {
   display: flex;
   align-items: flex-end;
 }
 
 .search__btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   margin-right: 9px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .search__input {
+  display: flex;
   padding-left: 0;
   padding-bottom: 3px;
   width: 218px;
   background: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid var(--white-color);
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 25px;
   color: var(--white-color);
@@ -575,6 +596,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 .search__input::placeholder {
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
@@ -625,7 +647,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   display: flex;
   position: relative;
-  padding-top: 141px;
+  padding-top: 135px;
   padding-bottom: 122px;
 }
 
@@ -637,16 +659,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .hero-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: -1px;
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 72px;
-  line-height: 83px;
+  line-height: 98px;
   color: var(--white-color);
 }
 
 .hero__descr {
   margin: 0;
   margin-bottom: 92px;
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -657,10 +681,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 314px;
-  height: 70px;
+  max-width: 314px;
+  min-height: 70px;
   background: var(--objects-color);
   border-radius: 100px;
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -700,8 +725,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .aboutus__text {
+  width: 100%;
   max-width: 1080px;
   margin: 0;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -711,8 +738,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /*...................gallery...................*/
 .gallery {
   display: flex;
-  min-height: 595px;
-  padding: 80px 0;
+  min-height: 600px;
+  padding-top: 83px;
   background-image: url('../img/gallery.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -735,6 +762,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: block;
   margin: 0;
   margin-bottom: 13px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
@@ -759,7 +787,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   max-width: 400px;
-  height: 40px;
+  min-height: 40px;
   border: 1px solid #fff;
   border-radius: 6px;
   transition: background 0.3s ease-in-out;
@@ -784,9 +812,9 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   vertical-align: center;
   max-width: 400px;
-  height: 40px !important;
   background-color: rgba(0, 0, 0, 0);
   padding: 0 16px;
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: normal;
   font-size: 16px;
@@ -848,8 +876,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .choices[data-type*="select-one"]::after {
   content: "";
-  height: 7px;
-  width: 12px;
+  min-height: 7px;
+  max-width: 12px;
   background-image: url('../img/choices.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -875,6 +903,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .choices__item {
   height: 40px;
   padding: 0;
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: normal;
   line-height: 32px;
@@ -901,6 +930,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /*................checkbox..............*/
 .checkbox__other {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -916,12 +949,6 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #C283F3;
 }
 
-.checkbox__other {
-  position: relative;
-  padding-left: 24px;
-  cursor: pointer;
-}
-
 .check {
   display: none;
 }
@@ -930,12 +957,17 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   top: 5px;
   left: 0;
-  width: 12px;
-  height: 12px;
+  width: 100%;
+  max-width: 12px;
+  min-height: 12px;
   border: 1px solid #FFFFFF;
   transition: border 0.2s ease-in-out;
 }
 
+.checkbox__list {
+  padding: 0;
+  padding-top: 160px;
+}
 
 .check:hover+span {
   border: 1px solid #C283F3;
@@ -963,7 +995,9 @@ input[type="search"]::-webkit-search-results-decoration {
 /*.......................gallery__slider...................*/
 .gallery__right {
   display: flex;
-  margin-top: 15px;
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 22px;
   z-index: 2;
   width: 72%;
   min-height: 410px;
@@ -1047,8 +1081,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .swiper-pagination-fraction {
   top: 10px;
   left: 45px;
-  width: 47px;
-  height: 23px;
+  width: 100%;
+  max-width: 47px;
+  min-height: 23px;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1125,6 +1161,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width: 900px;
   max-height: 500px;
   height: 93vh;
@@ -1166,6 +1203,10 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: transparent;
   border: 2px solid transparent;
   align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__close-btn svg path {
@@ -1191,6 +1232,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .modal__date {
   margin-bottom: 34px;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1200,6 +1242,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .modal__caption {
   margin-top: 10px;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1208,6 +1251,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .modal__pic-title {
   margin: 0;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1215,6 +1259,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .modal__text {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1234,6 +1279,7 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 1080px;
   margin: 0;
   margin-bottom: 39px;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1247,6 +1293,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog__painter {
   display: none;
+  width: 100%;
   max-width: 750px;
   margin-right: 50px;
 }
@@ -1259,7 +1306,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .painter__img {
-  margin-bottom: 26px;
+  margin-bottom: 35px;
 }
 
 .painter__img-unknown {
@@ -1270,6 +1317,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .painter__title {
   margin: 0;
   margin-bottom: 10px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1288,7 +1336,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .painter__dates {
   display: block;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 13px;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -1297,6 +1346,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .painter__text {
   margin: 0;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1304,6 +1354,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .painter__text-unknown {
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1311,6 +1362,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .painter__text-unknown-link {
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -1393,7 +1445,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .accordion__icon {
   display: flex;
   width: 50px;
-  width: 50px;
+  height: 50px;
   outline: none;
   outline-offset: -1px;
   border-radius: 100%;
@@ -1462,6 +1514,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .accordion__title-inside {
   margin: 0;
   margin-bottom: 5px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1472,6 +1525,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0;
   margin-bottom: 5px;
   max-width: 275px;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -1585,6 +1639,7 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: max-content;
   padding-left: 0;
   padding-right: 0;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1650,6 +1705,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .events__swiper-slide {
   position: relative;
+  width: 100%;
   max-width: 500px;
   min-height: 700px;
   display: flex;
@@ -1741,9 +1797,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 .events__img-signature {
+  width: 100%;
   max-width: 195px;
   padding-left: 50px;
   margin-bottom: 11px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -1763,6 +1821,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .events__title-card {
   margin: 0;
   margin-bottom: 4px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1771,6 +1830,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .events__text-card {
   margin: 0;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1779,9 +1839,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .events__link-card {
   display: block;
-  width: 87px;
-  height: 28px;
+  width: 100%;
+  max-width: 87px;
+  /* height: 28px; */
   margin: 0;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1823,7 +1885,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .project__text {
   margin: 0;
   margin-bottom: 20px;
+  width: 100%;
   max-width: 1060px;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1859,6 +1923,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .project__title-swiper {
   margin: 0;
   margin-bottom: 23px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1872,18 +1937,18 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .project__swiper {
-  margin-left: 74px;
-  margin-right: 74px;
-  height: 155px;
+  margin-left: 73px;
+  margin-right: 71px;
+  min-height: 155px;
   width: auto;
 }
-
 
 .project__swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
   height: 150px;
   border: 1px solid #CACACA;
   outline-offset: -1px;
@@ -1907,7 +1972,6 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 30px;
   transform: scaleX(-1);
 }
-
 
 .project__swiper-link {
   display: flex;
@@ -1939,6 +2003,13 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: 1px solid #9D5CD0;
 }
 
+.tooltip {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
 /*.....................contacts....................*/
 .contacts {
   margin: 0;
@@ -1977,8 +2048,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .form__input {
-  min-width: 270px;
-  height: 50px;
+  max-width: 270px;
+  min-height: 50px;
   padding: 12px 23px 10px 23px;
   margin-right: 20px;
   border: 1px solid #333333;
@@ -1994,8 +2065,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #EAEAEA;
 }
 
-
-
 .js-validate-error-label {
   position: absolute;
   left: 10%;
@@ -2004,23 +2073,26 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .form__input::placeholder {
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: #999999;
 }
 
-
 .form__btn {
-  min-width: 329px;
-  height: 50px;
+  width: 100%;
+  max-width: 329px;
+  min-height: 50px;
   padding: 9px 33px;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 18px;
   color: #9D5CD0;
   transition: background-color 0.3s linear, color 0.3s linear;
+  background-color: #FFFFFF;
 }
 
 
@@ -2047,6 +2119,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .contacts__title {
   margin: 0;
   margin-bottom: 6px;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -2055,6 +2128,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .contacts__text-locatio {
   margin: 0;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -2123,6 +2197,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer__list {
   display: flex;
   justify-content: flex-end;
+}
+
+.contacts__item {
+  list-style: none;
 }
 
 .footer__item:not(:last-child) {
