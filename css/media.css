@@ -622,15 +622,6 @@
   }
 
   .accordion__item-inside {
-    display: block;
-    columns: 3;
-    -moz-columns: 3;
-    -webkit-columns: 3;
-    min-width: 100%;
-    padding-right: 0px;
-  }
-
-  .accordion__item-inside {
     height: 100%;
   }
 
